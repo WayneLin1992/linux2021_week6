@@ -1,11 +1,11 @@
-vector: vector.c
-	gcc -o vector vector.c -Wall -Wextra -Wshadow -g -fsanitize=address,undefined
+bn: bn.c
+	gcc -o bn bn.c -Wall -Wextra -Wshadow -g -fsanitize=address,undefined
 
-vector_test: vector_test.c
-	gcc -o vector_test vector_test.c -Wall -Wextra -Wshadow -g -fsanitize=address,undefined
+twosum: TwoSum.c
+	gcc -o twosum TwoSum.c -Wall -Wextra -Wshadow -g -fsanitize=address,undefined
 
-vector_test_cpp: vector_test.cpp
-	g++ vector_test.cpp -o vector_test
+fiber: fiber.c
+	gcc -o fiber fiber.c -Wall -Wextra -Wshadow -g -fsanitize=address,undefined
 
 clean:
-	rm vector vector_test vector_test_cpp *.o
+	rm bn twosum fiber *.o
